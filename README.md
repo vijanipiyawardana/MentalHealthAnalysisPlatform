@@ -76,13 +76,19 @@ Only 4 categories [psychosis, mood_disorder, neurosis, substance_use_disorder] o
 
 ![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/1.png?raw=true)
 
+![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/2.png?raw=true)
+
 After preprocessing and feature analysing, the final dataset used to train the model contains 980 rows and 67 columns.
 
 #### $${\color{yellow}Splitting \space Dataset}$$
 
 Splitting data set into training, validation and test set.
 
+![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/3.png?raw=true)
+
 After using stratified splitting for splitting.
+
+![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/4.png?raw=true)
 
 #### $${\color{yellow}Model \space Selection \space and \space Training \space the \space model}$$
 
@@ -124,6 +130,37 @@ The number of epochs is 5, or full passes over the training data. The model will
 
 #### $${\color{yellow}Feature \space Importance \space Analysis}$$
 
+Combined permutation-based feature importance and correlation matrix techniques to analyse feature importance.
+
+1. Correlation Matrix as Preprocessing:
+
+First, use the correlation matrix to remove redundant features (e.g., features highly correlated with each other). This reduces the feature set size and ensures no strong multicollinearity exists.
+
+A correlation matrix evaluates the linear relationships between features (or between features and the target variable). Features with high inter-correlation are considered redundant, and one of them is removed.
+
+Example output:
+
+
+
+2. Permutation Importance to Refine:
+
+Next, use permutation-based feature importance to evaluate the impact of the remaining features on the model's performance which helps identify features that have a direct influence on the predictions.
+
+Permutation-based feature importance is the technique used to evaluate the importance of features in this model by observing how the model's performance changes when the values of a feature are randomly shuffled (permuted).
+
+The manual implementation of permutation importance is used because the FastAI learner does not directly support standard libraries like sklearn.inspection.permutation_importance.
+
+Considering the output from feature importance analysis, selected threshold as 0.0 for feature set reduction. 
+
+![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/5.png?raw=true)
+
+Benefits of Combining Both:
+Improved Efficiency: Reducing the feature set with a correlation matrix speeds up permutation importance calculations.
+Better Feature Set: Removes redundant features and focuses on those that are truly impactful for the model.
+Balanced Approach: Leverages the strengths of both techniques—correlation for redundancy and permutation for impact.
+
+
 #### $${\color{yellow}ReTrain \space model \space after \space Feature \space Importance \space Analysis}$$
+
 
 #### $${\color{yellow}Deployment \space and \space Application}$$
