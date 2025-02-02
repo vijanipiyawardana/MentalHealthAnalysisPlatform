@@ -74,7 +74,7 @@ As this dataset contains user inputs from a survey, some features contain string
 
 Only 4 categories [psychosis, mood_disorder, neurosis, substance_use_disorder] out of 63 categories in the target variable Diagnosis were selected by considering the frequency after analyzing these pie charts.
 
-![alt text](https://github.com/vijanipiyawardana/PawEnMij/blob/main/images/1.png?raw=true)
+![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/1.png?raw=true)
 
 After preprocessing and feature analysing, the final dataset used to train the model contains 980 rows and 67 columns.
 
