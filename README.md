@@ -155,9 +155,9 @@ Considering the output from feature importance analysis, selected threshold as 0
 ![alt text](https://github.com/vijanipiyawardana/MentalHealthAnalysisPlatform/blob/main/images/5.png?raw=true)
 
 Benefits of Combining Both:
-Improved Efficiency: Reducing the feature set with a correlation matrix speeds up permutation importance calculations.
-Better Feature Set: Removes redundant features and focuses on those that are truly impactful for the model.
-Balanced Approach: Leverages the strengths of both techniques—correlation for redundancy and permutation for impact.
+- Improved Efficiency: Reducing the feature set with a correlation matrix speeds up permutation importance calculations.
+- Better Feature Set: Removes redundant features and focuses on those that are truly impactful for the model.
+- Balanced Approach: Leverages the strengths of both techniques—correlation for redundancy and permutation for impact.
 
 
 #### $${\color{yellow}ReTrain \space model \space after \space Feature \space Importance \space Analysis}$$
