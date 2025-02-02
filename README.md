@@ -1,6 +1,8 @@
 ## Mental Health Analysis Platform
 
-@@ Project: @@ Deep Learning Model Development for Mental Health Condition Classification
+### $${\color{lightgreen}Project:}$$
+Deep Learning Model Development for Mental Health Condition Classification
+
 
 **Objective:** Train a deep learning model to classify mental health conditions based on the features in the dataset.
 
