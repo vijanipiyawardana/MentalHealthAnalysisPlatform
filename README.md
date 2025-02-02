@@ -3,10 +3,10 @@
 ### $${\color{lightgreen}Project:}$$
 Deep Learning Model Development for Mental Health Condition Classification
 
+### $${\color{lightgreen}Objective:}$$
+Train a deep learning model to classify mental health conditions based on the features in the dataset.
 
-**Objective:** Train a deep learning model to classify mental health conditions based on the features in the dataset.
-
-**Approach:**
+### $${\color{lightgreen}Approach:}$$
 - Target Variable: Diagnosis
 - Features: Use all or a selected subset of features to classify the diagnosis into various mental health conditions.
 - Steps:
@@ -14,15 +14,14 @@ Deep Learning Model Development for Mental Health Condition Classification
     - Train a fastai tabular learner.
     - Evaluate the model using metrics like accuracy, precision, recall, and F1 score.
 
-**Dataset**
-
+### $${\color{lightgreen}Dataset:}$$
 - Dataset is taken from kaggle: Local Mental health Dataset (pakistan).
 - This dataset contains sample data from questionnaire responses, obtained from The Fountain House Mental Health Institute Pakistan.
 https://www.kaggle.com/datasets/mariatamoor/local-mental-health-dataset-pakistan
 
 - The dataset contains variable Diagnosis which is used as the output variable for the mental health classification problem and all other variables (110) are features of mental health.
 
-**Project phases and methodology**
+### $${\color{lightgreen}Project \space phases \space and \space methodology:}$$
 
 **Data Preprocessing and Exploration**
 
